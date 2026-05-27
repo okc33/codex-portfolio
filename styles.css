@@ -262,6 +262,42 @@ img {
   line-height: 1.18;
 }
 
+.gallery-section .section-heading,
+.works-section .section-heading {
+  justify-items: center;
+  gap: 14px;
+  margin: 64px 0 128px;
+  text-align: center;
+}
+
+.gallery-section .section-heading .eyebrow,
+.works-section .section-heading .eyebrow {
+  margin: 0;
+  color: #cbb8e5;
+  font-family: "Montserrat", "Nunito", sans-serif;
+  font-size: clamp(2.8rem, 5vw, 4.3rem);
+  font-weight: 800;
+  line-height: 1;
+  text-transform: none;
+}
+
+.gallery-section .section-heading h1,
+.works-section .section-heading h1 {
+  color: #8b8d98;
+  font-size: clamp(1.05rem, 1.8vw, 1.35rem);
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.gallery-section .section-heading::after,
+.works-section .section-heading::after {
+  content: "";
+  width: 74px;
+  height: 4px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #f6a7cf, #a8d7ff);
+}
+
 .about-grid,
 .travel-layout {
   display: grid;
@@ -419,6 +455,76 @@ img {
 
 .work-body {
   padding: 26px;
+}
+
+.work-screenshot {
+  display: block;
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.work-screenshot img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 420ms ease;
+}
+
+.work-card:hover .work-screenshot img {
+  transform: scale(1.035);
+}
+
+.project-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+.project-tag,
+.project-year {
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+.project-tag {
+  color: #f08ba9;
+}
+
+.project-year {
+  color: #a5a5b2;
+  font-family: "Nunito", sans-serif;
+}
+
+.project-title {
+  min-height: 3em;
+}
+
+.project-description {
+  min-height: 5.7em;
+}
+
+.project-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 42px;
+  margin-top: 22px;
+  padding: 0 18px;
+  border-radius: 999px;
+  color: var(--ink);
+  background: linear-gradient(90deg, rgba(255, 217, 228, 0.82), rgba(215, 236, 255, 0.82));
+  font-family: "Nunito", "Noto Sans JP", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 800;
+  transition: transform 220ms ease, box-shadow 220ms ease;
+}
+
+.project-link:hover {
+  box-shadow: 0 14px 32px rgba(105, 93, 122, 0.14);
+  transform: translateY(-2px);
 }
 
 .work-tag {
@@ -585,7 +691,8 @@ img {
   aspect-ratio: 16 / 9;
   overflow: hidden;
   border: 0;
-  border-radius: 8px;
+  border-radius: 14px;
+  padding: 0;
   background: transparent;
   box-shadow: 0 20px 54px rgba(105, 93, 122, 0.13);
   cursor: pointer;
@@ -814,6 +921,11 @@ img {
 
   .section {
     padding: 118px 22px 72px;
+  }
+
+  .gallery-section .section-heading,
+  .works-section .section-heading {
+    margin: 38px 0 64px;
   }
 
   .hero-content {
