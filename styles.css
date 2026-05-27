@@ -26,7 +26,8 @@ body {
     radial-gradient(circle at top left, rgba(255, 217, 228, 0.42), transparent 34rem),
     radial-gradient(circle at 85% 20%, rgba(204, 241, 230, 0.42), transparent 30rem),
     var(--paper);
-  font-family: "Noto Serif JP", Georgia, serif;
+  font-family: "Zen Maru Gothic", "Hiragino Maru Gothic ProN", "Yu Gothic", sans-serif;
+  font-weight: 500;
   letter-spacing: 0;
 }
 
@@ -71,12 +72,13 @@ img {
 .work-tag,
 .site-nav a,
 .button {
-  font-family: "Marcellus", "Noto Serif JP", serif;
+  font-family: "Nunito", "Zen Maru Gothic", sans-serif;
   font-weight: 800;
 }
 
 .brand {
   font-size: 1.02rem;
+  letter-spacing: 0.02em;
 }
 
 .site-nav {
@@ -170,6 +172,7 @@ img {
 .hero h1 {
   margin: 0;
   font-size: clamp(3.4rem, 5vw, 5.8rem);
+  font-weight: 700;
   line-height: 1.04;
 }
 
@@ -251,6 +254,7 @@ img {
 .section-heading h2 {
   margin: 0;
   font-size: clamp(2.1rem, 3vw, 3.35rem);
+  font-weight: 700;
   line-height: 1.18;
 }
 
@@ -426,6 +430,7 @@ img {
 .dog-card h3 {
   margin: 0;
   font-size: 1.22rem;
+  font-weight: 700;
 }
 
 .work-body p:not(.work-tag),
@@ -551,7 +556,7 @@ img {
 
 .dog-card h3 {
   padding: 18px 4px 4px;
-  font-family: "Marcellus", "Noto Serif JP", serif;
+  font-family: "Nunito", "Zen Maru Gothic", sans-serif;
 }
 
 .page-shell {
@@ -634,7 +639,7 @@ img {
   border-radius: 999px;
   color: white;
   background: rgba(76, 77, 97, 0.28);
-  font-family: "Marcellus", serif;
+  font-family: "Nunito", sans-serif;
   font-size: 0.78rem;
   opacity: 0;
   transform: translateY(8px);
