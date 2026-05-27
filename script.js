@@ -212,7 +212,23 @@ let width = 0;
 let height = 0;
 let flakes = [];
 let pointerX = 0;
-let currentLang = localStorage.getItem("portfolioLang") || "ja";
+function readSavedLanguage() {
+  try {
+    return localStorage.getItem("portfolioLang") || "ja";
+  } catch {
+    return "ja";
+  }
+}
+
+function saveLanguage(lang) {
+  try {
+    localStorage.setItem("portfolioLang", lang);
+  } catch {
+    // Some browsing contexts block localStorage. Language switching still works for the current page.
+  }
+}
+
+let currentLang = readSavedLanguage();
 
 function getTranslation(key, lang = currentLang) {
   return key.split(".").reduce((value, part) => value?.[part], translations[lang]);
@@ -220,7 +236,7 @@ function getTranslation(key, lang = currentLang) {
 
 function setLanguage(lang) {
   currentLang = translations[lang] ? lang : "ja";
-  localStorage.setItem("portfolioLang", currentLang);
+  saveLanguage(currentLang);
   document.documentElement.lang = currentLang === "zh" ? "zh-CN" : currentLang;
 
   document.querySelectorAll("[data-i18n]").forEach((element) => {
@@ -348,10 +364,13 @@ document.querySelectorAll(".photo-card").forEach((card) => {
   card.addEventListener("click", () => {
     if (!photoDialog || !dialogTitle || !dialogNote) return;
     const photo = translations[currentLang].photos?.[card.dataset.photo];
-    if (!photo) return;
-    dialogTitle.textContent = photo.title;
-    dialogNote.textContent = photo.note;
-    photoDialog.showModal();
+    dialogTitle.textContent = photo?.title || card.dataset.titleJa || "";
+    dialogNote.textContent = photo?.note || card.dataset.noteJa || "";
+    if (typeof photoDialog.showModal === "function") {
+      photoDialog.showModal();
+    } else {
+      photoDialog.setAttribute("open", "");
+    }
   });
 });
 
