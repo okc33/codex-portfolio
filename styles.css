@@ -828,7 +828,7 @@ img {
 
 .photo-dialog-note {
   color: var(--muted);
-  font-size: 0.66rem;
+  font-size: 0.33rem;
   font-weight: 400;
   line-height: 1.8;
 }
