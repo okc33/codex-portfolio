@@ -17,37 +17,42 @@
     <header class="site-header">
       <a class="brand" href="index.html">Portfolio</a>
       <nav class="site-nav" aria-label="メインナビゲーション">
-        <a href="about.html">about</a>
-        <a href="works.html">works</a>
-        <a class="is-active" href="travel.html">travel</a>
-        <a href="dog.html">dog</a>
+        <a href="about.html" data-i18n="nav.about">about</a>
+        <a href="works.html" data-i18n="nav.works">works</a>
+        <a class="is-active" href="travel.html" data-i18n="nav.travel">travel</a>
+        <a href="dog.html" data-i18n="nav.dog">dog</a>
       </nav>
+      <div class="language-switcher" aria-label="Language">
+        <button type="button" data-lang="ja">JP</button>
+        <button type="button" data-lang="en">EN</button>
+        <button type="button" data-lang="zh">中文</button>
+      </div>
     </header>
 
     <main class="page-shell">
       <section class="section gallery-section">
         <div class="section-heading reveal">
-          <p class="eyebrow">Travel</p>
-          <h1>旅の記録</h1>
+          <p class="eyebrow" data-i18n="travel.eyebrow">Travel</p>
+          <h1 data-i18n="travel.title">旅の記録</h1>
         </div>
         <div class="photo-grid travel-grid">
-          <button class="photo-card reveal" type="button" data-caption="太平洋フェリーで仙台から名古屋に乗船">
-            <img src="assets/travel1.jpg" alt="北海道旅行写真 1" />
+          <button class="photo-card reveal" type="button" data-photo="travel1">
+            <img src="assets/travel1.jpg" alt="旅の写真 1" />
           </button>
-          <button class="photo-card reveal" type="button" data-caption="いわき市のアクアマリンふくしま">
-            <img src="assets/travel2.jpg" alt="北海道旅行写真 2" />
+          <button class="photo-card reveal" type="button" data-photo="travel2">
+            <img src="assets/travel2.jpg" alt="旅の写真 2" />
           </button>
-          <button class="photo-card reveal" type="button" data-caption="北海道稚内市の宗谷岬">
-            <img src="assets/travel3.jpg" alt="北海道旅行写真 3" />
+          <button class="photo-card reveal" type="button" data-photo="travel3">
+            <img src="assets/travel3.jpg" alt="旅の写真 3" />
           </button>
-          <button class="photo-card reveal" type="button" data-caption="イギリス南部のセブンシスターズ">
-            <img src="assets/travel4.jpg" alt="北海道旅行写真 4" />
+          <button class="photo-card reveal" type="button" data-photo="travel4">
+            <img src="assets/travel4.jpg" alt="旅の写真 4" />
           </button>
-          <button class="photo-card reveal" type="button" data-caption="スコットランドのエディンバラ">
-            <img src="assets/travel5.jpg" alt="北海道旅行写真 5" />
+          <button class="photo-card reveal" type="button" data-photo="travel5">
+            <img src="assets/travel5.jpg" alt="旅の写真 5" />
           </button>
-          <button class="photo-card reveal" type="button" data-caption="タイのアユタヤ">
-            <img src="assets/travel6.jpg" alt="北海道旅行写真 6" />
+          <button class="photo-card reveal" type="button" data-photo="travel6">
+            <img src="assets/travel6.jpg" alt="旅の写真 6" />
           </button>
         </div>
       </section>
@@ -55,7 +60,8 @@
 
     <dialog class="photo-dialog" aria-label="写真の説明">
       <button class="dialog-close" type="button" aria-label="閉じる">×</button>
-      <p></p>
+      <h2 class="photo-dialog-title"></h2>
+      <p class="photo-dialog-note"></p>
     </dialog>
 
     <script src="script.js"></script>

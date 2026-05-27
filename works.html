@@ -17,18 +17,23 @@
     <header class="site-header">
       <a class="brand" href="index.html">Portfolio</a>
       <nav class="site-nav" aria-label="メインナビゲーション">
-        <a href="about.html">about</a>
-        <a class="is-active" href="works.html">works</a>
-        <a href="travel.html">travel</a>
-        <a href="dog.html">dog</a>
+        <a href="about.html" data-i18n="nav.about">about</a>
+        <a class="is-active" href="works.html" data-i18n="nav.works">works</a>
+        <a href="travel.html" data-i18n="nav.travel">travel</a>
+        <a href="dog.html" data-i18n="nav.dog">dog</a>
       </nav>
+      <div class="language-switcher" aria-label="Language">
+        <button type="button" data-lang="ja">JP</button>
+        <button type="button" data-lang="en">EN</button>
+        <button type="button" data-lang="zh">中文</button>
+      </div>
     </header>
 
     <main class="page-shell">
       <section class="section works-section">
         <div class="section-heading reveal">
-          <p class="eyebrow">Works</p>
-          <h1>制作実績</h1>
+          <p class="eyebrow" data-i18n="works.eyebrow">Works</p>
+          <h1 data-i18n="works.title">制作実績</h1>
         </div>
         <div class="work-grid">
           <article class="work-card reveal">
@@ -37,14 +42,14 @@
             </a>
             <div class="work-body">
               <div class="project-meta">
-                <span class="project-tag">スライド</span>
+                <span class="project-tag" data-i18n="works.project1.tag">スライド</span>
                 <span class="project-year">2025</span>
               </div>
-              <h2 class="project-title">杭州スライド — Hangzhou Slides</h2>
-              <p class="project-description">
+              <h2 class="project-title" data-i18n="works.project1.title">杭州スライド — Hangzhou Slides</h2>
+              <p class="project-description" data-i18n="works.project1.description">
                 スライド表示用の静的デモ。デザインとレスポンシブ対応の確認ができます。
               </p>
-              <a href="https://okc33.github.io/hangzhou_slides/" class="project-link" target="_blank" rel="noopener">成果物を見る</a>
+              <a href="https://okc33.github.io/hangzhou_slides/" class="project-link" target="_blank" rel="noopener" data-i18n="works.link">成果物を見る</a>
             </div>
           </article>
 
@@ -54,14 +59,14 @@
             </a>
             <div class="work-body">
               <div class="project-meta">
-                <span class="project-tag">Webアプリ</span>
+                <span class="project-tag" data-i18n="works.project2.tag">Webアプリ</span>
                 <span class="project-year">2025</span>
               </div>
-              <h2 class="project-title">予約アプリ — Yoyaku App</h2>
-              <p class="project-description">
+              <h2 class="project-title" data-i18n="works.project2.title">予約アプリ — Yoyaku App</h2>
+              <p class="project-description" data-i18n="works.project2.description">
                 予約フローを示すデモアプリ。フォームやUIの挙動を確認できます。
               </p>
-              <a href="https://okc33.github.io/yoyaku_apuri/" class="project-link" target="_blank" rel="noopener">成果物を見る</a>
+              <a href="https://okc33.github.io/yoyaku_apuri/" class="project-link" target="_blank" rel="noopener" data-i18n="works.link">成果物を見る</a>
             </div>
           </article>
 
@@ -71,14 +76,14 @@
             </a>
             <div class="work-body">
               <div class="project-meta">
-                <span class="project-tag">旅行計画記録</span>
+                <span class="project-tag" data-i18n="works.project3.tag">旅行計画記録</span>
                 <span class="project-year">2025</span>
               </div>
-              <h2 class="project-title">Trip Plan Yes</h2>
-              <p class="project-description">
+              <h2 class="project-title" data-i18n="works.project3.title">Trip Plan Yes</h2>
+              <p class="project-description" data-i18n="works.project3.description">
                 旅行プラン作成ツールのデモサイト。ルート・日程のUIを実装しています。
               </p>
-              <a href="https://trip-plan-yes.netlify.app/" class="project-link" target="_blank" rel="noopener">成果物を見る</a>
+              <a href="https://trip-plan-yes.netlify.app/" class="project-link" target="_blank" rel="noopener" data-i18n="works.link">成果物を見る</a>
             </div>
           </article>
         </div>
