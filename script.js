@@ -7,7 +7,7 @@ const translations = {
       title: "サイト紹介",
       copy1: "Codexを使いながら、制作物・旅行写真・愛犬モコの写真をまとめたポートフォリオサイトを作りました。",
       copy2: "写真、余白、やさしい色を中心に、シンプルに見やすく整えています。",
-      copy3: "HTML、CSS、JavaScriptをベースに、CanvasやCSSアニメーションで動きを加え、Codexで構成やデザインを調整しながら制作しました。",
+      copy3: "HTML、CSS、JavaScriptをベースに、CanvasやCSSアニメーション、多言語切り替えを加え、Codexで構成やデザインを調整しながら制作しました。",
     },
     travel: {
       eyebrow: "Travel",
@@ -72,7 +72,7 @@ const translations = {
       title: "Site Intro",
       copy1: "I built this portfolio with Codex to bring together my works, travel photos, and photos of my dog Moco.",
       copy2: "The site keeps things simple, with photos, spacing, and soft colors at the center.",
-      copy3: "It is built with HTML, CSS, and JavaScript, with Canvas and CSS animations adding small movements.",
+      copy3: "It is built with HTML, CSS, and JavaScript, with Canvas animation, CSS motion, and language switching.",
     },
     travel: {
       eyebrow: "Travel",
@@ -137,7 +137,7 @@ const translations = {
       title: "网站介绍",
       copy1: "我使用 Codex 制作了这个作品集网站，用来整理作品、旅行照片和爱犬 Moco 的照片。",
       copy2: "整体以照片、留白和柔和的颜色为中心，保持简单易读。",
-      copy3: "网站基于 HTML、CSS 和 JavaScript 制作，并使用 Canvas 与 CSS 动画加入轻微的动态效果。",
+      copy3: "网站基于 HTML、CSS 和 JavaScript 制作，并加入 Canvas 动画、CSS 动效和多语言切换。",
     },
     travel: {
       eyebrow: "Travel",
